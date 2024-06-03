@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
-const port = 6000;
+const port = 3000;
 
 
 app.get('/', (req, res) => {
     console.log('Anas', req)
+    res.send('Hello team')
 });
 
 
